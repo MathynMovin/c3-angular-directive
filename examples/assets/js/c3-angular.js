@@ -1,6 +1,6 @@
-/*! c3-angular - v1.3.1 - 2016-08-04
+/*! c3-angular - v1.3.1 - 2017-03-02
 * https://github.com/jettro/c3-angular-directive
-* Copyright (c) 2016 ; Licensed  */
+* Copyright (c) 2017 ; Licensed  */
 angular.module('gridshore.c3js.chart', []);
 angular.module('gridshore.c3js.chart')
     .directive('chartAxes', ChartAxes);
@@ -406,12 +406,12 @@ function ChartAxisXTick() {
             }
         }
 
-        var format = attrs.format;
+        var format = attrs.tickFormat;
         if (format) {
             tick.format = d3.format(format);
         }
 
-        var formatTime = attrs.formatTime;
+        var formatTime = attrs.tickFormatTime;
         if (formatTime) {
             tick.format = d3.time.format(formatTime);
         }
